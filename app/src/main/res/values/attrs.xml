@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyTopBar">
+        <!--左面按钮-->
+        <attr name="LeftText"></attr>
+        <attr name="LefrtTextSize" format="string"></attr>
+        <attr name="LefrtTextGB" format="color|reference"></attr>
+        <!--中间标题-->
+        <attr name="TitleBar"></attr>
+        <attr name="TitleTextSize" format="string"></attr>
+        <attr name="TitleTextGB" format="color|reference"></attr>
+        <!--右面按钮-->
+        <attr name="RightText"></attr>
+        <attr name="RightTextSize" format="string"></attr>
+        <attr name="RightTextGB" format="color|reference"></attr>
+    </declare-styleable>
+
+</resources>
