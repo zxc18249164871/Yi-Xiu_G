@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#f2f2f2"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="地址管理"
+            android:textColor="#00cccc"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/haerbin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/fanhui" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jianse_henggang" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/shense_henggang" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jianse_henggang" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/shense_henggang" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="7dp"
+            android:src="@mipmap/dizhihguabli_yuanquan" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/shoujiweixiu_jiahao" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="请选择您的服务时间"
+            android:textSize="18sp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#2b2b2b" />
+
+</LinearLayout>
