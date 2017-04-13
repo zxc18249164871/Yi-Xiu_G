@@ -1,12 +1,14 @@
 package com.zykj.yi_xiu_g.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.zykj.yi_xiu_g.R;
 
@@ -43,7 +45,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layout_main);
         ButterKnife.bind(this);
-
+        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
     }
 
     @OnClick({R.id.haerbin, R.id.gerenzhongxin, R.id.tianzhuan_shoujiweixiu, R.id.tiaozhuan_diannaoweixiu, R.id.tiaozhuan_jiadianweixiu})
@@ -54,6 +56,8 @@ public class MainActivity extends Activity {
             case R.id.gerenzhongxin:
                 break;
             case R.id.tianzhuan_shoujiweixiu:
+                Intent intent=new Intent();
+                startActivity(intent);
                 break;
             case R.id.tiaozhuan_diannaoweixiu:
                 break;
