@@ -20,6 +20,12 @@
         <activity android:name=".activity.activity.GeRenZhongXin"></activity>
         <activity android:name=".activity.activity.ShouJiWeiXiu"></activity>
         <activity android:name=".activity.activity.JiaDianWeiXiu"></activity>
+        <activity android:name=".activity.activity.WoDeziLiao"></activity>
+        <activity android:name=".activity.activity.WoDeQianBao" />
+        <activity android:name=".activity.activity.DiZhiGunLi" />
+        <activity android:name=".activity.activity.FuWuPingTai" />
+        <activity android:name=".activity.activity.SheZhi" />
+        <activity android:name=".activity.activity.BianJidiZhi"/>
     </application>
 
 </manifest>

@@ -8,7 +8,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.zykj.yi_xiu_g.R;
 import com.zykj.yi_xiu_g.activity.activity.DianNaoWeiXiu;
@@ -25,8 +24,9 @@ import butterknife.OnClick;
  */
 
 public class MainActivity extends Activity {
-    @Bind(R.id.haerbin)
-    LinearLayout haerbin;
+
+    @Bind(R.id.haerbin_dizhi)
+    LinearLayout haerbinDizhi;
     @Bind(R.id.gerenzhongxin)
     ImageView gerenzhongxin;
     @Bind(R.id.imageView2)
@@ -35,14 +35,20 @@ public class MainActivity extends Activity {
     ImageView imageView3;
     @Bind(R.id.tianzhuan_shoujiweixiu)
     FrameLayout tianzhuanShoujiweixiu;
+    @Bind(R.id.zhuye_shouji)
+    LinearLayout zhuyeShouji;
     @Bind(R.id.tiaozhuan_diannaoweixiu)
     FrameLayout tiaozhuanDiannaoweixiu;
     @Bind(R.id.textView2)
     TextView textView2;
+    @Bind(R.id.zhuye_dinanao)
+    LinearLayout zhuyeDinanao;
     @Bind(R.id.imageView)
     ImageView imageView;
     @Bind(R.id.tiaozhuan_jiadianweixiu)
     FrameLayout tiaozhuanJiadianweixiu;
+    @Bind(R.id.zhuye_jiadian)
+    LinearLayout zhuyeJiadian;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,26 +58,26 @@ public class MainActivity extends Activity {
 
     }
 
-    @OnClick({R.id.haerbin, R.id.gerenzhongxin, R.id.tianzhuan_shoujiweixiu, R.id.tiaozhuan_diannaoweixiu, R.id.tiaozhuan_jiadianweixiu})
+    @OnClick({R.id.haerbin_dizhi, R.id.gerenzhongxin, R.id.zhuye_shouji, R.id.zhuye_dinanao, R.id.zhuye_jiadian})
     public void onViewClicked(View view) {
         switch (view.getId()) {
-            case R.id.haerbin:
+            case R.id.haerbin_dizhi:
                 break;
             case R.id.gerenzhongxin:
-                Intent gerenzhongxin = new Intent(this, GeRenZhongXin.class);
+                Intent gerenzhongxin=new Intent(this,GeRenZhongXin.class);
                 startActivity(gerenzhongxin);
                 break;
-            case R.id.tianzhuan_shoujiweixiu:
-                Intent intent = new Intent(this, ShouJiWeiXiu.class);
-                startActivity(intent);
+            case R.id.zhuye_shouji:
+                Intent shoujiweixiu=new Intent(this,ShouJiWeiXiu.class);
+                startActivity(shoujiweixiu);
                 break;
-            case R.id.tiaozhuan_diannaoweixiu:
-                Intent intent1 = new Intent(this, DianNaoWeiXiu.class);
-                startActivity(intent1);
+            case R.id.zhuye_dinanao:
+                Intent diannaoweixiu=new Intent(this,DianNaoWeiXiu.class);
+                startActivity(diannaoweixiu);
                 break;
-            case R.id.tiaozhuan_jiadianweixiu:
-                Intent jiadian=new Intent(this, JiaDianWeiXiu.class);
-                startActivity(jiadian);
+            case R.id.zhuye_jiadian:
+                Intent jiadianweixiu=new Intent(this,JiaDianWeiXiu.class);
+                startActivity(jiadianweixiu);
                 break;
         }
     }
