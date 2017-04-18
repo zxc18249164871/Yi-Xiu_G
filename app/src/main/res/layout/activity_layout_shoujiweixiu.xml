@@ -47,34 +47,35 @@
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:scaleType="fitXY"
             android:src="@mipmap/jianse_henggang" />
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:scaleType="fitXY"
             android:src="@mipmap/shense_henggang" />
 
         <ImageView
             android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:scaleType="fitXY"
-            android:layout_height="wrap_content"
-                      android:src="@mipmap/jianse_henggang" />
+            android:src="@mipmap/jianse_henggang" />
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:scaleType="fitXY"
             android:src="@mipmap/shense_henggang" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/pihnpai"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="5dp"
@@ -113,6 +114,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/xinghao"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="5dp"
@@ -151,6 +153,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/guzhang"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="5dp"
@@ -200,37 +203,33 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="110dp"
+        android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="#ffffff">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#2b2b2b" />
-
         <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="110dp">
+            android:id="@+id/tianjitupian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
                 android:src="@mipmap/shoujiweixiu_huisefangkuang" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="33dp"
+                android:layout_gravity="center"
                 android:src="@mipmap/shoujiweixiu_baiseyuanquan" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="43dp"
+                android:layout_gravity="center"
                 android:src="@mipmap/shoujiweixiu_jiahao" />
 
         </FrameLayout>
@@ -238,12 +237,9 @@
 
     </FrameLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#2b2b2b" />
 
     <Button
+        android:id="@+id/shoujiweixiu_queding"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"

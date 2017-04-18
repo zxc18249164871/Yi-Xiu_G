@@ -11,6 +11,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zykj.yi_xiu_g.R;
+import com.zykj.yi_xiu_g.activity.activity.DianNaoWeiXiu;
+import com.zykj.yi_xiu_g.activity.activity.GeRenZhongXin;
+import com.zykj.yi_xiu_g.activity.activity.JiaDianWeiXiu;
+import com.zykj.yi_xiu_g.activity.activity.ShouJiWeiXiu;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -45,7 +49,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layout_main);
         ButterKnife.bind(this);
-        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+
     }
 
     @OnClick({R.id.haerbin, R.id.gerenzhongxin, R.id.tianzhuan_shoujiweixiu, R.id.tiaozhuan_diannaoweixiu, R.id.tiaozhuan_jiadianweixiu})
@@ -54,14 +58,20 @@ public class MainActivity extends Activity {
             case R.id.haerbin:
                 break;
             case R.id.gerenzhongxin:
+                Intent gerenzhongxin = new Intent(this, GeRenZhongXin.class);
+                startActivity(gerenzhongxin);
                 break;
             case R.id.tianzhuan_shoujiweixiu:
-                Intent intent=new Intent();
+                Intent intent = new Intent(this, ShouJiWeiXiu.class);
                 startActivity(intent);
                 break;
             case R.id.tiaozhuan_diannaoweixiu:
+                Intent intent1 = new Intent(this, DianNaoWeiXiu.class);
+                startActivity(intent1);
                 break;
             case R.id.tiaozhuan_jiadianweixiu:
+                Intent jiadian=new Intent(this, JiaDianWeiXiu.class);
+                startActivity(jiadian);
                 break;
         }
     }

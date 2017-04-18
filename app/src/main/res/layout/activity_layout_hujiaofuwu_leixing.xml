@@ -42,30 +42,30 @@
 
         <ImageView
             android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:scaleType="fitXY"
-            android:layout_height="wrap_content"
             android:src="@mipmap/jianse_henggang" />
 
         <ImageView
             android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:scaleType="fitXY"
-            android:layout_height="wrap_content"
             android:src="@mipmap/shense_henggang" />
 
         <ImageView
             android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:scaleType="fitXY"
-            android:layout_height="wrap_content"
             android:src="@mipmap/jianse_henggang" />
 
         <ImageView
             android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:scaleType="fitXY"
-            android:layout_height="wrap_content"
             android:src="@mipmap/shense_henggang" />
     </LinearLayout>
 
@@ -106,12 +106,6 @@
             android:src="@mipmap/huisexuanzejiantou" />
     </LinearLayout>
 
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#2b2b2b" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -132,6 +126,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="22dp"
             android:src="@mipmap/shuxian" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -148,12 +143,6 @@
             android:layout_marginLeft="80dp"
             android:src="@mipmap/huisexuanzejiantou" />
     </LinearLayout>
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#2b2b2b" />
 
     <Button
         android:layout_width="300dp"
